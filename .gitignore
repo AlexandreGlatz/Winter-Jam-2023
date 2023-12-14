@@ -25,6 +25,8 @@
 
 # Visual Studio cache directory
 .vs/
+.vsconfig
+Winter-Jam-2023.sln
 
 # Gradle cache directory
 .gradle/
