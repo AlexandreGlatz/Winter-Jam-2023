@@ -7,6 +7,7 @@ public class Movements : MonoBehaviour
     public Transform orientation;
     public Transform player;
     public Transform playerObject;
+    public Transform bottomSnowSphere;
     public Rigidbody rb;
 
     public float rotationSpeed;
@@ -33,7 +34,11 @@ public class Movements : MonoBehaviour
         }
 
         var moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-        rb.AddForce(moveDirection.normalized * moveSpeed * 10.0f, ForceMode.Force);
+        rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
+
+        bottomSnowSphere.forward = viewDirection.normalized;
+        var rotationDirection = new Vector3(1.0f * moveDirection.normalized.x, 0.0f, 0.0f);
+        bottomSnowSphere.Rotate(rotationDirection);
 
     }
 
