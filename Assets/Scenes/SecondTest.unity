@@ -347,12 +347,12 @@ PrefabInstance:
     - target: {fileID: 7953791315052139130, guid: 96c54f1628575cd4ea4e7dface3a9413,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000004276888
+      value: 0.0000000042768895
       objectReference: {fileID: 0}
     - target: {fileID: 7953791315052139130, guid: 96c54f1628575cd4ea4e7dface3a9413,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 4.6037057e-10
+      value: -4.603707e-10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -435,8 +435,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 9116255206718439745, guid: 0980834fc8e9af4488787f9548cf56c2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1612762408}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 176543761098746577, guid: 0980834fc8e9af4488787f9548cf56c2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2056245112}
   m_SourcePrefab: {fileID: 100100000, guid: 0980834fc8e9af4488787f9548cf56c2, type: 3}
 --- !u!4 &1342024363 stripped
 Transform:
@@ -444,6 +452,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1167274247}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1612762407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1612762408}
+  m_Layer: 0
+  m_Name: snowballSpawnpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1612762408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612762407}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.006, y: 2.74, z: 7.34}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2056245111}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1758068928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -517,12 +556,34 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bd38ba1ad33eda4b9382c732a053986, type: 3}
+--- !u!1 &1932022584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 176543761098746577, guid: 0980834fc8e9af4488787f9548cf56c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1167274247}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2056245111 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9116255206718439745, guid: 0980834fc8e9af4488787f9548cf56c2,
     type: 3}
   m_PrefabInstance: {fileID: 1167274247}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2056245112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932022584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94858bef55ebfde41aa3471553f9eeca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snowballSpawnpoint: {fileID: 1612762408}
+  snowballPrefab: {fileID: 2991669900596774409, guid: 40d4f3d126878cb44a2da0e95cc310ce,
+    type: 3}
+  snowballSpeed: 10
 --- !u!4 &2093965591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1496820515685532250, guid: 0980834fc8e9af4488787f9548cf56c2,
