@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9455224787649783}
   - component: {fileID: 9041699477268889281}
   - component: {fileID: 3334379710937924152}
-  - component: {fileID: 4997627469967454184}
+  - component: {fileID: 4946240103084730920}
   m_Layer: 0
   m_Name: Birch3_winter
   m_TagString: Untagged
@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -52,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -82,17 +84,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4997627469967454184
-MeshCollider:
+--- !u!136 &4946240103084730920
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3925677224634332900}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3243264717552843444, guid: 048285646260a5d4e812e040dc325c58, type: 3}
+  serializedVersion: 2
+  m_Radius: 0.23942423
+  m_Height: 6.5200114
+  m_Direction: 1
+  m_Center: {x: 0.0000007748604, y: 3.318414, z: -0.00000047683716}

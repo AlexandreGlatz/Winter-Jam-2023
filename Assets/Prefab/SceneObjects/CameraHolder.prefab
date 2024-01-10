@@ -28,8 +28,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280558317177613721}
-  m_LocalRotation: {x: 0.15963821, y: 0.00000003397144, z: -0.0000000054935914, w: 0.9871756}
-  m_LocalPosition: {x: -25.182983, y: -9.713266, z: 11.979492}
+  m_LocalRotation: {x: 0.15963809, y: 0.00000001698572, z: -0.000000002746794, w: 0.98717564}
+  m_LocalPosition: {x: -25.182983, y: -18.234484, z: 11.979492}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -157,7 +157,7 @@ MonoBehaviour:
   bottomSnowSphere: {fileID: 0}
   rb: {fileID: 0}
   rotationSpeed: 5
-  moveSpeed: 100
+  moveSpeed: 10
 --- !u!114 &5702047324777209368
 MonoBehaviour:
   m_ObjectHideFlags: 0

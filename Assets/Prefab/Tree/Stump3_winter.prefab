@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6189746212195891268}
   - component: {fileID: 2935612335991964274}
   - component: {fileID: 8899652410256244363}
-  - component: {fileID: 1197062138214536035}
+  - component: {fileID: -2272448809019614280}
   m_Layer: 0
   m_Name: Stump3_winter
   m_TagString: Untagged
@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -52,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -82,17 +84,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1197062138214536035
-MeshCollider:
+--- !u!136 &-2272448809019614280
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7186967351195568727}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2362942172348577, guid: 2e411cb2f267ed849a7fecf2d4515deb, type: 3}
+  serializedVersion: 2
+  m_Radius: 0.24556467
+  m_Height: 0.82357645
+  m_Direction: 1
+  m_Center: {x: 0.037826948, y: 0.4924959, z: 0.01179377}

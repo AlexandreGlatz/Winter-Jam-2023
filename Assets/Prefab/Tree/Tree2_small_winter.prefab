@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7511479024018089476}
   - component: {fileID: 1541678995738352690}
   - component: {fileID: 5069273671019897035}
-  - component: {fileID: 3261897581617007897}
+  - component: {fileID: 5370907506002812414}
+  - component: {fileID: -6271312994914687346}
   m_Layer: 0
   m_Name: Tree2_small_winter
   m_TagString: Untagged
@@ -29,6 +30,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -52,6 +54,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -82,17 +85,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3261897581617007897
-MeshCollider:
+--- !u!136 &5370907506002812414
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6801978632432751639}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3338200494277867589, guid: 1c4537dc77909e6418f2f9d740d14b7b, type: 3}
+  serializedVersion: 2
+  m_Radius: 0.7584886
+  m_Height: 2.7062416
+  m_Direction: 1
+  m_Center: {x: -0.015247047, y: 1.3304949, z: 0.038619995}
+--- !u!205 &-6271312994914687346
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6801978632432751639}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.015247047, y: 1.3304949, z: 0.038619995}
+  m_Size: 2.7062416
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.2217097
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5069273671019897035}
+  - screenRelativeHeight: 0.11085485
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5069273671019897035}
+  - screenRelativeHeight: 0.036951616
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5069273671019897035}
+  m_Enabled: 1
